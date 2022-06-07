@@ -1,0 +1,21 @@
+[
+{
+    "email": "luke@gmail.com",
+    "fullName" : "Luke Skywalker",
+    "userName": "Luke",
+    "passsword": "12345678"
+},
+{
+    "email": "luke1@gmail.com",
+    "fullName" : "Luke1 Skywalker",
+    "userName": "Luke1",
+    "passsword": "12345678"
+},
+{
+    "email": "luke2@gmail.com",
+    "fullName" : "Luke2 Skywalker",
+    "userName": "Luke2",
+    "passsword": "12345678"
+}
+
+]

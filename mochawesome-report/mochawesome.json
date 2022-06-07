@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-07T15:51:38.061Z",
+    "end": "2022-06-07T15:51:46.476Z",
+    "duration": 8415,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "85501b42-4f06-4b19-90ad-ec6ad01689de",
+      "title": "",
+      "fullFile": "cypress\\e2e\\3-ALURAPIC\\login.cy.js",
+      "file": "cypress\\e2e\\3-ALURAPIC\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a9fc5b3-1a4f-457d-b3a2-c7ccd95396da",
+          "title": "Testes login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "fazer login de usuario valido",
+              "fullTitle": "Testes login fazer login de usuario valido",
+              "timedOut": null,
+              "duration": 5437,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(Cypress.env('username'), Cypress.env('password'));\ncy.contains('a', '(Logout)').should('be.visible');",
+              "err": {},
+              "uuid": "12933f36-009d-4205-a1aa-8d67b08cc070",
+              "parentUUID": "4a9fc5b3-1a4f-457d-b3a2-c7ccd95396da",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "fazer login de usuario invalido",
+              "fullTitle": "Testes login fazer login de usuario invalido",
+              "timedOut": null,
+              "duration": 2799,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('jacqueline', '1234');\ncy.on('window:alert', str => {\n  expect(str).to.equal('Invalid username or password');\n});",
+              "err": {},
+              "uuid": "4f9b6ed5-85ad-4675-8555-74f913c8380e",
+              "parentUUID": "4a9fc5b3-1a4f-457d-b3a2-c7ccd95396da",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "12933f36-009d-4205-a1aa-8d67b08cc070",
+            "4f9b6ed5-85ad-4675-8555-74f913c8380e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8236,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

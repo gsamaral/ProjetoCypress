@@ -1,0 +1,26 @@
+
+
+
+npx cypress open  //Apos criar o projeto , abrir o projeto e rodar o comando
+
+
+
+npx cypress run //rodar testes em backgroud
+
+
+>npm i -D cypress-mochawesome-reporter
+
+npx cypress run --reporter mochawesome  //executar cypress com reporter
+
+npx cypress run --record --key 351a3090-dcc7-4c8a-807f-8aae199baa24  //executar ci/cd dashboard
+
+para add massa de dados é no arquivo fixtures, add arquivo json
+
+flaky tests // trabalhar com tempos de testes
+
+
+trabalhar com Cypress env variables: https://docs.cypress.io/api/cypress-api/env#Syntax
+
+
+mock: simular comportamento  (estudar mais: https://www.alura.com.br/artigos/testes-com-mocks-e-stubs)
+
